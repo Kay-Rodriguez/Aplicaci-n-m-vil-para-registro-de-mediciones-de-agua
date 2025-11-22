@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Ingreso</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-item>
+    <ion-input placeholder="Correo" [(ngModel)]="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="password" placeholder="Contraseña" [(ngModel)]="password"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="login()">
+    Iniciar sesión
+  </ion-button>
+<ion-button expand="full" color="danger" (click)="crearUsuarios()">
+  Crear usuarios 
+</ion-button>
+
+</ion-content>

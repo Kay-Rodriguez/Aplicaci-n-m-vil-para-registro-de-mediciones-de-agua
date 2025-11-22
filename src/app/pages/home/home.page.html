@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Mis Lecturas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-list *ngIf="lecturas.length > 0">
+    <ion-item *ngFor="let l of lecturas">
+      <ion-label>
+        <h2>Valor: {{ l.valor_lectura }}</h2>
+        <p>{{ l.observaciones }}</p>
+        <p>Lat: {{ l.lat }} - Lng: {{ l.lng }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <p *ngIf="lecturas.length === 0" class="vacio">
+    No tienes lecturas registradas todavía.
+  </p>
+
+  <ion-button expand="full" routerLink="/nueva-lectura">Nueva Lectura</ion-button>
+
+</ion-content>
