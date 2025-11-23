@@ -23,11 +23,12 @@ export class HomePage {
 
   constructor(private auth: AuthService, private ls: LecturasService) {}
 
-  async ionViewWillEnter() {
-    const user = await this.auth.getUser();
-    if (!user) return;
+async ionViewWillEnter() {
+  const user = await this.auth.getUser();
+  if (!user) return;
 
-    const { data } = await this.ls.lecturasDeUsuario(user.id);
-    this.lecturas = data ?? [];
-  }
+  const { data } = await this.ls.lecturasDeUsuario(user.id);
+  this.lecturas = data ?? [];
+}
+
 }

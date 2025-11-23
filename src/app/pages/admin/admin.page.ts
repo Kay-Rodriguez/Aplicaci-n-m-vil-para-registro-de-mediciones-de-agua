@@ -19,8 +19,9 @@ export class AdminPage {
 
   constructor(private ls: LecturasService) {}
 
-  async ionViewWillEnter() {
-    const { data } = await this.ls.todasLecturas();
-    this.lecturas = data ?? [];
-  }
+async ionViewWillEnter() {
+  const { data } = await this.ls.todasLecturas();
+  this.lecturas = data ?? [];
+}
+
 }

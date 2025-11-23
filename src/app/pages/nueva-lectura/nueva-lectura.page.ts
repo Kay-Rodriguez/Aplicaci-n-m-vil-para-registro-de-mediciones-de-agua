@@ -4,7 +4,6 @@ import {
   IonContent, IonHeader, IonToolbar, IonTitle,
   IonItem, IonInput, IonTextarea, IonButton, IonLabel
 } from '@ionic/angular/standalone';
-
 import { CameraService } from 'src/app/services/camera.service';
 import { GpsService } from 'src/app/services/gps.service';
 import { AuthService } from 'src/app/services/auth.service';

@@ -28,4 +28,5 @@ export class AuthService {
     return (await this.supabaseSvc.supabase.auth.getUser()).data.user;
   }
   
+  
 }
