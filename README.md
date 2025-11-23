@@ -1,5 +1,4 @@
-﻿# Aplicaci-nm-vil-para-registro-de-mediciones-de-agua
-Aplicación móvil para registro de mediciones de agua
+# Aplicación móvil para registro de mediciones de agua
 
 Esta es una aplicación móvil desarrollada en Ionic + Angular, diseñada para que los medidores del Distrito Metropolitano de Quito puedan registrar lecturas de medidores de agua de forma digital, rápida y verificable.
 
@@ -19,39 +18,27 @@ La app permite registrar:
 
 Todos los datos se almacenan en Supabase (Auth, Database y Storage).
 
-👥 Perfiles del sistema
+## Perfiles del sistema
 🔹 Administrador
 
-Puede ver todas las lecturas registradas.
-
-Accede al panel /admin.
-
-Puede revisar fotos, coordenadas y enlaces a mapas.
+Puede ver todas las lecturas registradas.Accede al panel /admin.Puede revisar fotos, coordenadas y enlaces a mapas.
 
 🔹 Medidor
 
-Puede registrar nuevas lecturas.
+Puede registrar nuevas lecturas.Solo puede ver sus propias mediciones.Accede a /home.
+ 
+# Credenciales de prueba
 
-Solo puede ver sus propias mediciones.
-
-Accede a /home.
-
-🔑 Credenciales de prueba
 🧑‍💼 Administrador
+
 email: admin@agua.gob
 password: admin123
-
-
-→ Redirige a /admin
 
 👷 Medidor
 email: medidor1@agua.gob
 password: medidor123
 
-
-→ Redirige a /home
-
-🗄 Tecnologías utilizadas
+##Tecnologías utilizadas
 
 Ionic + Angular (Frontend)
 
@@ -79,14 +66,6 @@ src/
  │    ├── gps.service.ts
  │    └── supabase.service.ts
 
-🧰 Instalación
-
-Instalar dependencias:
-
-npm install
 
 
-Ejecutar en navegador:
-
-ionic serve
 
